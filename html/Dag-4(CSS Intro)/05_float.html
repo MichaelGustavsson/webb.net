@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Float & Alignment</title>
+    <style>
+      body {
+        /* em baseras på standard storleken på typsnitt 16px*/
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6rem;        
+      }
+      .clear {
+        clear: both;
+      }
+
+      .box {
+        background: #f4f4f4;
+        border: solid 1px #333;
+        margin-bottom: 2rem;
+        padding: 20px;
+      }
+
+      .box p {        
+        text-align: center;
+        padding-left: 3rem;
+      }
+
+      .box h4 {
+        text-align: center;
+      }
+
+      #box-2{
+        float: left;
+        width: 50%;
+      }
+      #box-3{
+        float: right;
+        width: 35%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h4>Rubrik utanför</h4>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ut.</p>
+      <div id="box-1" class="box">
+        <h4>Rubrik 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+          fugit dolore, labore officia quas necessitatibus soluta modi
+          voluptatibus tempore ad praesentium obcaecati temporibus quibusdam
+          inventore non iusto eaque, tempora nesciunt!
+        </p>
+      </div>
+      <div id="box-2" class="box">
+        <h4>Rubrik 2</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+          fugit dolore, labore officia quas necessitatibus soluta modi
+          voluptatibus tempore ad praesentium obcaecati temporibus quibusdam
+          inventore non iusto eaque, tempora nesciunt!
+        </p>
+      </div>
+      <div id="box-3" class="box ">
+        <h4>Rubrik 3</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+          fugit dolore, labore officia quas necessitatibus soluta modi
+          voluptatibus tempore ad praesentium obcaecati temporibus quibusdam
+          inventore non iusto eaque, tempora nesciunt!
+        </p>
+      </div>
+      <div id="box-4" class="box clear">
+        <h4>Rubrik 4</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+          fugit dolore, labore officia quas necessitatibus soluta modi
+          voluptatibus tempore ad praesentium obcaecati temporibus quibusdam
+          inventore non iusto eaque, tempora nesciunt!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
