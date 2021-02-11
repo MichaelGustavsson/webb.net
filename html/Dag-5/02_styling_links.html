@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling links</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    main {
+      padding:40px 30px;
+    }
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Använd pseudo klasser */
+    a:hover {
+      color:red;
+    }
+
+    /* a:visited {
+      color:green;
+    }
+    a:active {
+      color: yellow;
+    } */
+
+    /* Button and Link styling */
+    .btn {
+      background: #303f9f;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 40px;
+      /* right down blur spread opacity*/
+      box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.9);
+    }
+
+    .btn:hover {
+      background: #1a237e;
+      color: #928e8e;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="#" class="btn">Click on the link</a>
+  </main>
+</body>
+</html>
