@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline and block</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      li {
+        display: inline;
+      }
+
+      li a {
+        padding-right: 20px;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      .box{
+        /* display: inline; NOT WORKING! */
+        display: inline-block;
+        background: #f4f4f4;
+        border: solid 1px #333;
+        width: 32%;
+        padding:20px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- This will be displayed inline -->
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <br />
+      <br />
+      <br />
+      <!-- The image is displayed with block -->
+      <img src="./img/CSS3-liten.png" alt="" />
+      <br />
+      <br />
+      <br />
+
+      <!-- The divs are displayed with inline-block -->
+      <div class="box">
+        <h4>Rubrik</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et illo culpa quasi excepturi laudantium iusto, perferendis distinctio ea nesciunt.</p>
+      </div>
+      <div class="box">
+        <h4>Rubrik</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et illo culpa quasi excepturi laudantium iusto, perferendis distinctio ea nesciunt.</p>
+      </div>
+      <div class="box">
+        <h4>Rubrik</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum et illo culpa quasi excepturi laudantium iusto, perferendis distinctio ea nesciunt.</p>
+      </div>
+    </main>
+  </body>
+</html>
