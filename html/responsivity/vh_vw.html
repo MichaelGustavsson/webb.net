@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vh & Vw</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header{
+      background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 15rem;
+      height: 100vh;
+      /* width: 100vw; */
+    }
+
+    header h1{
+      font-size: 4rem;
+    }
+
+    header p{
+      margin: 1.5rem 0;
+    }
+
+    .btn{
+      display: inline-block;
+      text-decoration: none;
+      background: #f4f4f4;
+      padding: 1rem 2rem;
+    }
+
+    section{
+      padding: 2rem;
+    }
+
+    @media(max-height: 450px){
+      header{
+        padding-top: 5rem;
+      }
+    }
+
+    @media(max-width: 500px){
+      header h1{
+        font-size: 3.2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Välkommen hit!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae alias, suscipit numquam optio perferendis eaque sequi? Atque, voluptatum. Repellat vel beatae, ipsum asperiores, eaque accusamus dignissimos ipsam necessitatibus excepturi corporis a dicta est minima saepe aliquid ad illo fuga perferendis.</p>
+    <a href="#" class="btn">Klicka på mig!</a>
+  </header>
+  <main>
+    <section>
+      <h3>Mer info om oss</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi adipisci porro hic laudantium voluptas, expedita minus doloremque unde magnam aliquam quia, soluta, debitis corrupti neque. Officia fugiat rerum suscipit maxime nam quo facilis, obcaecati dolore possimus esse illo pariatur reprehenderit dicta id autem voluptate ipsam libero eaque optio sunt eos quas? Excepturi culpa voluptatum cum fugit totam nihil voluptate laboriosam vel alias odit dicta dolorum, commodi molestiae rerum nemo suscipit nostrum at adipisci quibusdam! Omnis.</p>
+    </section>
+  </main>
+</body>
+</html>

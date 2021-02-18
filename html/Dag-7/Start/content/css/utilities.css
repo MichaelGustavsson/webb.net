@@ -1,0 +1,54 @@
+/* Utilities */
+.clear {
+  clear: both;
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #333;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+}
