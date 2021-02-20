@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li{
+      padding: 0.25rem;
+      margin: 0.25rem;
+      list-style: none;
+    }
+
+    /* first child */
+    li:first-child{
+      background: lightcoral;
+    
+    }
+    /* last child */
+    li:last-child{
+      background: lightcoral !important;
+    }
+
+    /* Get specific position */
+    li:nth-child(4){
+      background: burlywood !important;
+    }
+
+    /* Get every 2nd item */
+    li:nth-child(2n+0) {
+      background: orange;
+    }
+
+    /* Get every 2nd item start form 10 */
+    li:nth-child(2n+10) {
+      background: yellow;
+    }
+
+    /* Every odd */
+    li:nth-child(odd){
+      background-color: #ccc;
+    }
+
+    /* Every even */
+    li:nth-child(even){
+      background: lightskyblue;
+    }
+  </style>
+</head>
+<body>
+  
+  <ul>
+    <li>Ämne 1</li>
+    <li>Ämne 2</li>
+    <li>Ämne 3</li>
+    <li>Ämne 4</li>
+    <li>Ämne 5</li>
+    <li>Ämne 6</li>
+    <li>Ämne 7</li>
+    <li>Ämne 8</li>
+    <li>Ämne 9</li>
+    <li>Ämne 10</li>
+    <li>Ämne 11</li>
+    <li>Ämne 12</li>
+    <li>Ämne 13</li>
+    <li>Ämne 14</li>
+    <li>Ämne 15</li>
+    <li>Ämne 16</li>
+    <li>Ämne 17</li>
+    <li>Ämne 18</li>
+    <li>Ämne 19</li>
+    <li>Ämne 20</li>
+  </ul>
+</body>
+</html>

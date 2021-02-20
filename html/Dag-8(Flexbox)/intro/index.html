@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    .flex-container {
-      display: flex;
-      flex-wrap: nowrap;
-      background: #f4f4f4;
-      align-items:center;
-      justify-content: space-around;
-      height: 50vh;
-    }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .flex-container {
+        background: #f4f4f4;
+        height: 50vh;
+        display: flex;
+        /* flex-direction: column; */
+        /* Main axis */
+        align-items: center;
+        /* align-items: stretch; */
+        /* Cross axis */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: flex-start; */
+        /* justify-content: center; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
 
-    .box{
-      background: #f4f4f4;
-      border: solid 2px #ccc;
-      margin: 10px;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-      width: 200px;
-      /* flex: 1; */
-    }
 
+        /* flex-shrink: 0; */
+        /* flex-grow: 1; */
+      }
 
-    /* .box-1{
-      flex-shrink: 0;
-    }
-    .box-2{
-      flex-grow: 1;
-      flex-basis: 0;
-    }
-    .box-3{
-      flex-grow: 2;
-      flex-basis: 0;
-    } */
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-    }
-  </style>
-</head>
-<body>
-  <section class="flex-container">
-    <div class="box box-1">
-      <h4>Låda 1</h4>
-    </div>
-    <div class="box box-2">
-      <h4>Låda 2</h4>
-    </div>
-    <div class="box box-3">
-      <h4>Låda 3</h4>
-    </div>    
-  </section>
-</body>
+      .box {
+        background: #f4f4f4;
+        border: solid 2px #ccc;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        /* flex: 1; */
+        /* flex: grow shrink basis */
+        /* flex: 1 0 300px; */
+      }
+
+      .box-1 {
+        align-self: flex-start;
+      }
+
+      .box-3 {
+        align-self: flex-end;
+      }
+      /* .box-1 {
+        flex-shrink: 0;
+      }
+      .box-2 {
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+      .box-3 {
+        flex-grow: 2;
+        flex-basis:0;
+        flex: 2
+      } */
+    </style>
+  </head>
+  <body>
+    <section class="flex-container">
+      <div class="box box-1">
+        <h4>Låda 1</h4>
+      </div>
+      <div class="box box-2">
+        <h4>Låda 2</h4>
+      </div>
+      <div class="box box-3">
+        <h4>Låda 3</h4>
+      </div>
+    </section>
+  </body>
 </html>

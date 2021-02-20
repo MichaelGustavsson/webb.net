@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } */
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container{
+      padding:10px;
+    }
+
+    /* Search direct child */
+    div > p{
+      background: green;
+    }
+
+    /* Search for element directly after */
+    div + p {
+      background: darkblue;
+      color: #fff;
+    }
+
+    /* Search by attribute */
+    a[target='_self']{
+      background: blueviolet;
+      color: #fff;
+    }
+
+    /* Specific attribute value */
+    input[type='text'],
+    input[type='email'] {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <ul>
+        <li>Item 1</li>
+        <li><p>Item 2</p></li>
+        <li>Item 3</li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    
+    <a href="#">Aftonbladet</a>
+    <a href="" target="_self">SMHI</a>
+    <a href="www.iths.se" target="_blank">ITHS</a>
+    
+    <br>
+    <br>
+    
+    <form>
+      <input type="text" placeholder="Your name">
+      <input type="email" placeholder="Your email">
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</body>
+</html>

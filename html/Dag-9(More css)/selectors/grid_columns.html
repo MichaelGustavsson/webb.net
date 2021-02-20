@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Columns</title>
+  <style>
+    .grid{
+      display: grid;
+      /* grid-template-columns: 200px auto 200px; */
+      /* grid-template-columns: auto auto auto auto; */
+      /* grid-template-columns: repeat(4, auto); */
+      /* grid-template-columns: 1fr 2fr 1fr; */
+      grid-template-columns: repeat(3, 1fr);
+      gap: .5rem;
+    }
+
+    .item {
+      padding: 3rem;
+      border: solid 1px #666;
+      background: #f4f4f4;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+
+    main{
+      display: grid;
+      grid-template-columns: 2fr 0.5fr;
+      gap: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+    <div class="item">item 4</div>
+    <div class="item">item 4</div>
+    <div class="item">item 4</div>
+  </div>
+
+  <main>
+    <section>
+      <h4>The sites heading</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse nihil veniam explicabo, atque at minus quod eum ab impedit est dolorem! Nihil ea qui quam vitae dicta at, omnis, voluptates suscipit inventore laboriosam iste debitis aut culpa! Magni, accusantium.</p>
+    </section>
+    <aside>
+      <h4>Aside heading</h4>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, totam.</p>
+    </aside>
+  </main>
+</body>
+</html>
