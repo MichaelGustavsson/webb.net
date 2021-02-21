@@ -1,147 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./content/css/colors.css">
-  <link rel="stylesheet" href="./content/css/utilities.css">
-  <link rel="stylesheet" href="./content/css/navigation.css">
-  <link rel="stylesheet" href="./content/css/landing-page.css">
-  <link rel="stylesheet" href="./content/css/styles.css">
-  <link rel="stylesheet" media="screen and (max-width: 768px)" href="./content/css/mobile.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-  <title>WestCoast Cars</title>
-</head>
-<body>
-  <header class="landing">
-    <div id="navbar" class="navbar">
-      <h1 class="logo">
-        <span class="text-primary"><i class="fas fa-car"></i> WestCoast</span> Cars
-      </h1>
-      <ul>
-        <li><a href="#">Start</a></li>
-        <li><a href="#">Försäljning</a></li>
-        <li><a href="#">Service & verkstad</a></li>
-        <li><a href="#about">Om Oss</a></li>
-      </ul>
-    </div>
-    <div class="content">
-      <h1>Vi säljer High End bilar för den kräsne</h1>
-      <p>Vi tillhandahåller prestanda bilar ifrån hela världen</p>
-      <a href="#" class="btn btn-primary"><i class="fas fa-chevron-right"></i> Läs mer här</a>
-    </div>
-  </header>
-  <!-- About Icons -->
-    <section id="about" class="icons bg-light">
-      <div class="flex-items">
-        <div>
-          <i class="fas fa-certificate fa-2x"></i>
-          <div>
-            <h3>Garantier</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum vitae velit impedit, cum perspiciatis quos dolores aperiam. Voluptate, cumque.</p>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./content/css/styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px"
+      href="./content/css/mobile.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/734a53a685.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WestCoast Cars</title>
+  </head>
+  <body>
+    <nav id="main-nav">
+      <div class="container">
+        <h1 class="logo">WestCoast Cars</h1>
+        <div class="social">
+          <a href="http://facebook.com" target="_blank"
+            ><i class="fab fa-facebook-square fa-2x"></i
+          ></a>
+          <a href="http://twitter.com" target="_blank"
+            ><i class="fab fa-twitter-square fa-2x"></i
+          ></a>
+          <a href="http://instagram.com" target="_blank"
+            ><i class="fab fa-instagram-square fa-2x"></i
+          ></a>
+          <a href="http://youtube.com" target="_blank"
+            ><i class="fab fa-youtube-square fa-2x"></i
+          ></a>
         </div>
-        <div>
-          <i class="fas fa-user-shield fa-2x"></i>
-          <div>
-            <h3>Trygghet</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum vitae velit impedit, cum perspiciatis quos dolores aperiam. Voluptate, cumque.</p>
-          </div>
-        </div>
-        <div>
-          <i class="fas fa-file-signature fa-2x"></i>
-          <div>
-            <h3>Leasing</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eum vitae velit impedit, cum perspiciatis quos dolores aperiam. Voluptate, cumque.</p>
+        <ul>
+          <li><a class="active" href="index.html">Hem</a></li>
+          <li><a href="about.html">Om Oss</a></li>
+          <li><a href="sales.html">Bilar</a></li>
+          <li><a href="leasing.html">Leasing</a></li>
+        </ul>
+      </div>
+    </nav>
+    <header id="main-display">
+      <div class="container">
+        <div class="main-display-container">
+          <div class="main-display-content">
+            <h1>Vår utställning</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+              voluptatem laborum suscipit odio veritatis? Quia tempore
+              reiciendis esse alias totam delectus illo magni repellat
+              consequuntur! Laudantium cupiditate atque fuga quis nostrum
+              adipisci obcaecati rerum. Illo in sit quasi. Blanditiis maiores
+              vitae ratione molestiae laboriosam illum in ea omnis placeat
+              veritatis!
+            </p>
+            <a href="sales.html" class="btn btn-secondary">Läs mer</a>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <!-- Warranty: content -->
-    <section class="content flex-columns">
-      <div class="row">
-        <div class="column">
-          <div class="column-left">
-            <img src="./content/img/warranty.jpg" alt="garantier">
-          </div>
-        </div>
-        <div class="column">
-          <div class="column-right bg-primary">
-            <h4>Garanti är en självklarhet</h4>
-            <h2>Alltid 3 månaders garanti</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio a quas minus dolor eum animi sequi veniam itaque, neque voluptatibus quo et id praesentium facilis nisi at. Commodi, at neque?</p>
-            <a href="#" class="btn btn-outline"><i class="fas fa-chevron-right"></i> Läs mer</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Warranty: content -->
-    <section class="content flex-columns flex-reverse">
-      <div class="row">
-        <div class="column">
-          <div class="column-left">
-            <img src="./content/img/comfort.jpg" alt="garantier">
-          </div>
-        </div>
-        <div class="column">
-          <div class="column-right bg-secondary">
-            <h4>Alltid trygg vid köp av bil hos oss</h4>
-            <h2>Alltid 3 månaders garanti</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio a quas minus dolor eum animi sequi veniam itaque, neque voluptatibus quo et id praesentium facilis nisi at. Commodi, at neque?</p>
-            <a href="#" class="btn btn-outline"><i class="fas fa-chevron-right"></i> Läs mer</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="content flex-columns">
-      <div class="row">
-        <div class="column">
-          <div class="column-left">
-            <img src="./content/img/car1.jpg" alt="garantier">
-          </div>
-        </div>
-        <div class="column">
-          <div class="column-right bg-primary">
-            <h4>Leasa din önskebil</h4>
-            <h2>Vi erbjuder attraktiva leasing avtal</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio a quas minus dolor eum animi sequi veniam itaque, neque voluptatibus quo et id praesentium facilis nisi at. Commodi, at neque?</p>
-            <a href="#" class="btn btn-outline"><i class="fas fa-chevron-right"></i> Läs mer</a>
-          </div>
+    <!-- Nyheter -->
+    <article id="news" class="py-2">
+      <div class="container">
+        <h2>Information</h2>
+        <div class="news-container">
+          <section class="card">
+            <img src="./content/img/car1.jpg" alt="car-1" />
+            <div>
+              <div class="category category-news">Nyheter</div>
+              <h3>
+                <a href="sales.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint asperiores obcaecati iure qui. Velit, unde! Esse excepturi mollitia corporis ab modi sit voluptatem ad, ipsum expedita porro. Dignissimos perferendis fugiat necessitatibus, unde deserunt aspernatur, ipsa quia beatae veniam alias aperiam, ab nam illo debitis eaque fuga excepturi. Enim velit doloremque tenetur accusamus consectetur ipsum molestiae unde ea quis incidunt, veniam mollitia animi vero a perspiciatis beatae obcaecati explicabo culpa. Deleniti.</p>
+            </div>
+          </section>
+          <section class="card">
+            <!-- <img src="./content/img/garage.jpg" alt="service" /> -->
+            <div class="category category-service">Service</div>
+            <h3>
+              <a href="sales.html">Lorem ipsum dolor sit amet.</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni facilis cum repellat beatae, explicabo eos soluta, odit similique illum aperiam consectetur eius assumenda repellendus laudantium itaque doloribus sed? Sint, laborum ex minima laudantium temporibus accusantium ut. Non, rem reiciendis, optio itaque sunt nulla inventore consequatur ratione asperiores temporibus atque maxime quaerat distinctio animi obcaecati nihil! Est hic voluptatibus deserunt nihil.</p>
+          </section>
+          <section class="card">
+            <div class="category category-warranty">Garantier</div>
+            <h3>
+              <a href="sales.html">Lorem ipsum dolor sit amet.</a>
+            </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt totam voluptate sequi quis vel quas voluptatibus sit eaque veritatis numquam recusandae neque tempore officiis doloremque qui perferendis, libero laudantium accusamus iste molestias reprehenderit temporibus doloribus voluptas? Tenetur beatae alias possimus. Nostrum enim unde, non, maiores laborum molestiae delectus neque in natus commodi maxime ratione suscipit et quas aspernatur blanditiis assumenda quis. Consequatur ducimus soluta dolor adipisci recusandae, nostrum ratione minima amet officiis libero natus perspiciatis ea labore quisquam suscipit expedita corrupti non. Dolore minus ipsa perspiciatis deserunt numquam nisi.</p>
+            <img src="./content/img/warranty.jpg" alt="garanti" />
+          </section>
+          <section class="card">
+            <div>
+              <div class="category category-comfort">Trygghet</div>
+              <h3>
+                <a href="sales.html">Lorem ipsum dolor sit amet.</a>
+              </h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe voluptates adipisci? Perferendis consequuntur delectus, at, obcaecati neque quia odit labore incidunt eum, exercitationem id libero quaerat similique blanditiis cum veniam dolorum dicta possimus! Aliquid corrupti dolore aut sunt, facilis assumenda, consectetur doloremque quae soluta exercitationem saepe consequatur pariatur rem ut voluptates nemo culpa. Temporibus enim eligendi, necessitatibus explicabo eius beatae iure nobis a iste voluptatem. Sunt explicabo quas assumenda culpa incidunt voluptatum esse quis molestiae voluptate quos? Velit modi iusto repellendus adipisci ullam incidunt eligendi, nulla, aliquam illum laborum culpa et saepe, vitae repudiandae ipsa alias voluptatibus ut. Ad, dolorem minus, consectetur iusto nesciunt dolorum molestias amet facere fuga eveniet mollitia ea! Id distinctio provident et rem fuga? Adipisci velit, accusamus odio cumque blanditiis perspiciatis ullam natus aspernatur pariatur sit nulla repudiandae dignissimos, repellendus voluptatibus ducimus! Iusto nemo cumque magnam, rem dolorum aut consequatur! Labore autem adipisci voluptatem nostrum veritatis? Animi molestiae quaerat nemo voluptate nisi quos enim, saepe magnam sunt, ipsam, dolores sapiente excepturi nobis illum ullam! Tempore perspiciatis assumenda rerum sequi ex, possimus repudiandae cupiditate, doloremque vitae necessitatibus fugit velit? Possimus, sint! Minus facere, praesentium perferendis doloremque laboriosam commodi voluptas nisi reprehenderit ipsum cum vitae, molestias voluptatem.</p>
+            </div>
+            <img src="./content/img/comfort.jpg" alt="trygghet" />
+          </section>
         </div>
       </div>
-    </section>
-    <!-- Cars -->
-    <section id="cars" class="cars flex-grid section-padding">
-      <header class="section-header">
-        <h4>Några av våra bilar</h4>
-        <h2>Prestanda åk</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, repellendus.</p>
-      </header>
-      <div class="row">
-        <div class="column">
-          <img src="./content/img/car1.jpg" alt="Bil 1">
-          <img src="./content/img/car2.jpg" alt="Bil 2">
+    </article>
+    <footer id="main-footer" class="py-2">
+      <div class="container footer-container">
+        <div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus placeat porro tenetur nihil? Ipsa distinctio dolores architecto deleniti, illum cumque.</p>
         </div>
-        <div class="column">
-          <img src="./content/img/car3.jpg" alt="Bil 3">
-          <img src="./content/img/car4.jpg" alt="Bil 4">
+        <div>
+          <h3>Nyhetsbrev</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere!</p>
+          <form>
+            <input type="email" placeholder="Ange din e-post...">
+            <input type="submit" value="prenumerera" class="btn btn-primary">
+          </form>
         </div>
-        <div class="column">
-          <img src="./content/img/car5.jpg" alt="Bil 5">
-          <img src="./content/img/car6.jpg" alt="Bil 6">
+        <div>
+          <h3>Länkar</h3>
+          <ul class="list">
+            <li><a href="#">Support & Hjälp</a></li>
+            <li><a href="#">Om Oss</a></li>
+            <li><a href="#">Kontakta Oss</a></li>
+          </ul>
         </div>
-        <div class="column">
-          <img src="./content/img/car7.jpg" alt="Bil 7">
-          <img src="./content/img/car8.jpg" alt="Bil 8">
+        <div>
+          <h2>Gå med i vår klubb</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ut.</p>
+          <a href="#" class="btn btn-secondary">Gå med nu!</a>
+        </div>
+        <div>
+          <p>Copyright &copy; 2021, All Rights Reserved</p>
         </div>
       </div>
-    </section>
-    <footer class="bg-dark">
-      <p>WestCoast Cars &copy;2021, All Rights Reserved</p>
     </footer>
-</body>
+  </body>
 </html>
