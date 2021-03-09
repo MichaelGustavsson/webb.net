@@ -3,3 +3,9 @@ h1{
   color: red;
   font-size: 6rem;
 }
+
+.info {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+  color: #333;
+}

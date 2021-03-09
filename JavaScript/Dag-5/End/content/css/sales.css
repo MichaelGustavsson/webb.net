@@ -100,32 +100,3 @@ body {
     grid-template-columns: repeat(6, 1fr);
   }
 }
-/* @media(max-width: 960px){
-  .gallery{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media(min-width: 1024px){
-  .gallery{
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media(min-width: 1310px){
-  .gallery{
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media(min-width: 1600px){
-  .gallery{
-    grid-template-columns: repeat(5, 1fr);
-  }
-} */
-
-/*
-@media(max-width: 2200px){
-  .gallery{
-    grid-template-columns: repeat(5, 1fr);
-  }
-} */
