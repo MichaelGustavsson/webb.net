@@ -15,21 +15,21 @@ const arr = [1, 2, 3, 4];
 //Med ES6...
 //Plocka ut element till variabler.
 const [a, b, c, d] = arr;
-//console.log(a, b, c);
+console.log(a, b, c);
 
 //Ta första och sista elementen...
 let [first, , , last] = arr;
-//console.log(first, last);
+console.log(first, last);
 
 //Kasta om ordningen...
 [first, last] = [last, first]
 //console.log(first, last);
 
 //Nästlade listor...
-// const nestedArr = [6, 7, [1, 2]];
-// console.log(nestedArr);
+ const nestedArr = [6, 7, [1, 2]];
+console.log(nestedArr);
 
-// const[, i,[, l]] = nestedArr;
+const[, i,[, l]] = nestedArr;
 // console.log(i, l);
 
 // const [x, y, z] = [3,4]
@@ -53,11 +53,12 @@ const car = {
 };
 
 const {registrationNo: regnummer, make: tillverkare, model, mileage} = car;
-//console.log(regnummer, tillverkare, model, mileage);
+console.log(regnummer, tillverkare, model, mileage);
 
-//console.log(vehicle);
+console.log(vehicle);
 const{Vehicle: myCar} = vehicle;
-//console.log(myCar);
+console.log('----------------MyCar--------------------------');
+console.log(myCar);
 
 //console.log(myCar.Make, myCar.Model, myCar.ModelYear);
 

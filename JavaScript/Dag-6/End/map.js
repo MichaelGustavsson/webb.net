@@ -16,7 +16,7 @@ console.log(vehicles);
 
 // console.log(bilar);
 
-const cars = vehicles.map(function(vehicle, index) {
+const cars = vehicles.map(function(vehicle) {
   return `${vehicle.id} ${vehicle.make} ${vehicle.model}`;
 });
 
