@@ -5,18 +5,11 @@ const modalDialog = document.querySelector('.modal');
 const closeModal = document.querySelector('.close-modal');
 const overlay = document.querySelector('.overlay');
 
-// for(let car of vehicles) {
-//   gallery.insertAdjacentHTML('beforeend',`<div class="car">
-//   <img id="${car.id}" src="./content/img/${car.imageName}.jpg" alt="${car.make} ${car.model}" />
-//   <p>${car.make} ${car.model}</p>
-//   </div>`)
-// }
-
 vehicles.forEach(car => {
   gallery.insertAdjacentHTML(
     'beforeend',
     `<div class="car">
-    <img id="${car.id}" src="./content/img/${car.imageName}.jpg" alt="${car.make} ${car.model}" />
+    <img id="${car.id}" src="/content/img/${car.imageName}.jpg" alt="${car.make} ${car.model}" />
     <p>${car.make} ${car.model}</p>
     </div>`
   );

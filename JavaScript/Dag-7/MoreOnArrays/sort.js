@@ -11,7 +11,7 @@ console.log(trans.sort());
 //The default sort in Javascript sorts only on strings.
 
 //The solution is to implement our own comparer
-//We can use a callback function in sort that takes to arguments. Ex:
+//We can use a callback function in sort that takes two arguments. Ex:
 
 //return < 0 A comes before B
 //return > 0 B comes before A

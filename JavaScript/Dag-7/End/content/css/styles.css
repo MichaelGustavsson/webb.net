@@ -87,6 +87,7 @@ p {
   cursor: pointer;
   color: var(--light-color);
   padding: 0.5rem 1.5rem;
+  outline: none !important;
 }
 
 .btn-primary { background: var(--primary-color);}
@@ -121,6 +122,14 @@ p {
 .list li a:hover{
   color: var(--secondary-color) !important;
 }
+
+.form-control {
+  padding: 8px 4px;
+  border: solid 1px #c2c2c2;
+  border-radius: 5px;
+  outline: none !important;
+}
+
 /* Navigation */
 #main-nav {
   background: #fff;
