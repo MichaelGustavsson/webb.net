@@ -1,0 +1,75 @@
+table {
+  border-collapse: collapse;
+  background-color: #fff;
+  width: 100%;
+  min-width: 600px;
+}
+
+th {
+  text-align: left;
+  padding: 10px 5px;
+}
+
+td {
+  padding: 5px;
+  border-bottom: solid 1px #f3f3f3;
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+#admin-nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#admin-nav .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+.scroll-container {
+  border: solid 1px #949292;
+  padding: 0;
+}
+
+.table-container {
+  overflow-x: scroll;
+}
+.pagination-header {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--secondary-color);
+}
+
+#addNewVehicle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#addVehicle-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+#save {
+  width: 100px;
+}
+input[type=text]{
+  width: 400px;
+}
+
+.hidden {
+  display: none;
+}

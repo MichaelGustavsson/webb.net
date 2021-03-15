@@ -1,9 +1,9 @@
 'use strict';
 
+const vehicleTable = document.querySelector('#vehicle-list');
 const tableView = document.querySelector('#tableView');
 const addVehicleView = document.querySelector('#addVehicle-container');
-const vehicleTable = document.querySelector('#vehicle-list');
-const searchInput = document.querySelector('#searchField');
+const searchInput = document.querySelector('#searchInput');
 const searchButton = document.querySelector('#searchButton');
 const saveButton = document.querySelector('#save');
 const regNoInput = document.querySelector('#regNoInput');

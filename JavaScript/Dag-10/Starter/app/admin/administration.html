@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/734a53a685.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Administerar bilar</title>
+    <link rel="stylesheet" href="/content/css/styles.css" />
+    <link rel="stylesheet" href="/content/css/admin.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="admin-nav">
+        <div class="container">
+          <ul>
+            <li>
+              <i class="fal fa-arrow-alt-left"></i>
+              <a href="../public/index.html">Back to application</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Vehicle table -->
+    <main>
+      <section id="tableView" class="containter">
+        <section class="scroll-container">
+          <div class="pagination-header">
+            <div>
+              <input
+                id="searchInput"
+                type="text"
+                class="form-control"
+                placeholder="Type search string"
+              />
+              <button class="btn" id="searchButton">search</button>
+            </div>
+            <button class="btn" id="addNewVehicle">Add</button>
+          </div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>RegNo</th>
+                  <th>Make</th>
+                  <th>Model</th>
+                  <th>Mode year</th>
+                  <th>Mileage</th>
+                  <th>Value</th>
+                </tr>
+              </thead>
+              <tbody id="vehicle-list"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+
+      <!-- Add Vehicle form -->
+      <section id="addVehicle-container" class="hidden">
+        <form>
+          <input type="text" id="vehicleIdInput" class="form-control" placeholder="Add dummy id...">
+          <input id="regNoInput" type="text" class="form-control" placeholder="Registrationno">
+          <input id="makeInput" type="text" class="form-control" placeholder="Make">
+          <input id="modelInput" type="text" class="form-control" placeholder="Model">
+          <input id="modelYearInput" type="text" class="form-control" placeholder="Model year">
+          <input id="mileageInput" type="text" class="form-control" placeholder="Mileage">
+          <input id="valueInput" type="text" class="form-control" placeholder="Value">
+          <button class="btn" id="save">Save</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/scripts/car-list.js"></script>
+    <script src="/scripts/admin.js"></script>
+  </body>
+</html>
