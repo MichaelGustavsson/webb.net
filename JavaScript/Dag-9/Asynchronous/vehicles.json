@@ -1,0 +1,272 @@
+[
+  {
+    "VehicleId": 1848,
+    "RegistrationNo": "AR27966",
+    "Version": "2.0 TDI 140 COMBI",
+    "VinNumber": "TMBJE73T0F9025084",
+    "Name": "SKODA, SUPERB",
+    "ModelYear": "2015",
+    "Mileage": 162000
+  },
+  {
+    "VehicleId": 1849,
+    "RegistrationNo": "CM74039",
+    "Version": "1.6 CRDi 5-DØRS PREMIUM",
+    "VinNumber": "TMAH3517AJJ013572",
+    "Name": "HYUNDAI, I30",
+    "ModelYear": "2017",
+    "Mileage": 112500
+  },
+  {
+    "VehicleId": 1850,
+    "RegistrationNo": "BS60442",
+    "Version": "1.0 MPI 60",
+    "VinNumber": "WVWZZZAAZJD120180",
+    "Name": "VOLKSWAGEN, UP!",
+    "ModelYear": "2018",
+    "Mileage": 16611
+  },
+  {
+    "VehicleId": 1851,
+    "RegistrationNo": "CP40282",
+    "Version": "3.0 TDI QUATTRO AUT.",
+    "VinNumber": "WAUZZZ4GXEN014360",
+    "Name": "AUDI, A6",
+    "ModelYear": "0   ",
+    "Mileage": 170000
+  },
+  {
+    "VehicleId": 1852,
+    "RegistrationNo": "CE90212",
+    "Version": "1.3 ELEGANCE 5D CP C",
+    "VinNumber": "XMCXNZ33ABF019133",
+    "Name": "MITSUBISHI, COLT",
+    "ModelYear": "0   ",
+    "Mileage": 10000000
+  },
+  {
+    "VehicleId": 1853,
+    "RegistrationNo": "BX10114",
+    "Version": "2.0 TDI BMT 140 DSG6",
+    "VinNumber": "WVGZZZ1TZFW035798",
+    "Name": "VOLKSWAGEN, TOURAN",
+    "ModelYear": "2015",
+    "Mileage": 177000
+  },
+  {
+    "VehicleId": 1854,
+    "RegistrationNo": "AZ28393",
+    "Version": "1.0",
+    "VinNumber": "TSMEXB22S00193762",
+    "Name": "SUZUKI SPLASH 1,0",
+    "ModelYear": "0   ",
+    "Mileage": 157000
+  },
+  {
+    "VehicleId": 1855,
+    "RegistrationNo": "BR92251",
+    "Version": "1.2 TDI BLUEMOTION",
+    "VinNumber": "WVWZZZ6RZBY170516",
+    "Name": "VOLKSWAGEN, POLO",
+    "ModelYear": "0   ",
+    "Mileage": 281000
+  },
+  {
+    "VehicleId": 1856,
+    "RegistrationNo": "ZY31606",
+    "Version": "2.0 TDI",
+    "VinNumber": "WVGZZZ1TZ6W232334",
+    "Name": "VOLKSWAGEN TOURAN 2,0 TDI",
+    "ModelYear": "0   ",
+    "Mileage": 265000
+  },
+  {
+    "VehicleId": 1857,
+    "RegistrationNo": "ZC30150",
+    "Version": "1.9 TDI",
+    "VinNumber": "VSSZZZ5PZ8R035498",
+    "Name": "SEAT ALTEA XL 1,9 TDI",
+    "ModelYear": "0   ",
+    "Mileage": 270000
+  },
+  {
+    "VehicleId": 1858,
+    "RegistrationNo": "BL82931",
+    "Version": "CARRERA S",
+    "VinNumber": "WP0ZZZ99ZCS110858",
+    "Name": "PORSCHE, 911",
+    "ModelYear": "0   ",
+    "Mileage": 96000
+  },
+  {
+    "VehicleId": 1859,
+    "RegistrationNo": "AL73738",
+    "Version": "1.6 TDI 105 HATCHBACK",
+    "VinNumber": "TMBAG9NE6E0061014",
+    "Name": "SKODA OCTAVIA 1.6 TDI 105 HK Hatchback",
+    "ModelYear": "2014",
+    "Mileage": 109000
+  },
+  {
+    "VehicleId": 1860,
+    "RegistrationNo": "AX71272",
+    "Version": "1.6 BlueHDi 120 HK SW",
+    "VinNumber": "VF3LCBHZHFS167247",
+    "Name": "PEUGEOT, 308",
+    "ModelYear": "2015",
+    "Mileage": 134000
+  },
+  {
+    "VehicleId": 1861,
+    "RegistrationNo": "GG26276",
+    "Version": "1.6 CRDI 90 FL CW",
+    "VinNumber": "TMADB81SACJ074830",
+    "Name": "HYUNDAI I30CW 1,6 CRDI 90 FL",
+    "ModelYear": "0   ",
+    "Mileage": 199000
+  },
+  {
+    "VehicleId": 1862,
+    "RegistrationNo": "BZ38830",
+    "Version": "1.0 MPI BMT 60 5-DØRS",
+    "VinNumber": "WVWZZZAAZFD032945",
+    "Name": "VOLKSWAGEN, UP!",
+    "ModelYear": "2015",
+    "Mileage": 32000
+  },
+  {
+    "VehicleId": 1863,
+    "RegistrationNo": "CM89422",
+    "Version": "1.6 BlueHDi 100 HK",
+    "VinNumber": "VF7NCBHY6GY561573",
+    "Name": "CITROËN C4 1.6 BlueHDi 100 hk 4-dørs m. bagklap Man.",
+    "ModelYear": "2017",
+    "Mileage": 106000
+  },
+  {
+    "VehicleId": 1864,
+    "RegistrationNo": "AM66667",
+    "Version": "1.6 HDI AUT.",
+    "VinNumber": "VF7LC9HZH74884521",
+    "Name": "CITROËN C 4 1,6 HDI AUT.",
+    "ModelYear": "0   ",
+    "Mileage": 342000
+  },
+  {
+    "VehicleId": 1865,
+    "RegistrationNo": "AS71565",
+    "Version": "1.7",
+    "VinNumber": "WF0CXXGAECWR19506",
+    "Name": "FORD, PUMA",
+    "ModelYear": "0   ",
+    "Mileage": 215000
+  },
+  {
+    "VehicleId": 1866,
+    "RegistrationNo": "CB15331",
+    "Version": "S7",
+    "VinNumber": "WAUZZZ4G2DN131140",
+    "Name": "AUDI, A7",
+    "ModelYear": "0   ",
+    "Mileage": 180000
+  },
+  {
+    "VehicleId": 1868,
+    "RegistrationNo": "BD97314",
+    "Version": "1.25 5-DØRS",
+    "VinNumber": "WF0JXXGAJJAS62293",
+    "Name": "FORD FIESTA 5 DØRS 1,25",
+    "ModelYear": "0   ",
+    "Mileage": 192000
+  },
+  {
+    "VehicleId": 1869,
+    "RegistrationNo": "BX83629",
+    "Version": "1.6",
+    "VinNumber": "VF70BBHYBGE519896",
+    "Name": "CITROEN, C4 CACTUS",
+    "ModelYear": "2016",
+    "Mileage": 81000
+  },
+  {
+    "VehicleId": 1874,
+    "RegistrationNo": "CE75667",
+    "Version": "3.0 TDI QUATTRO",
+    "VinNumber": "WAUZZZ8F6DN011908",
+    "Name": "AUDI, A5",
+    "ModelYear": "0   ",
+    "Mileage": 155300
+  },
+  {
+    "VehicleId": 1886,
+    "RegistrationNo": "XP41138",
+    "Version": "1.9 TDI",
+    "VinNumber": "WVWZZZ1KZ6B013181",
+    "Name": "VOLKSWAGEN, GOLF",
+    "ModelYear": "0   ",
+    "Mileage": 288000
+  },
+  {
+    "VehicleId": 1887,
+    "RegistrationNo": "BW56581",
+    "Version": "1.0 5-DØRS",
+    "VinNumber": "JTDKG10C40N461371",
+    "Name": "TOYOTA AYGO 5-DØRS 1.0 HB 5-DØRS",
+    "ModelYear": "0   ",
+    "Mileage": 112000
+  },
+  {
+    "VehicleId": 1888,
+    "RegistrationNo": "CE36966",
+    "Version": "1.6 CDTi 136 HK SPORTS TOURER AUT.",
+    "VinNumber": "W0LGT8G39G1071060",
+    "Name": "OPEL, INSIGNIA",
+    "ModelYear": "2016",
+    "Mileage": 206000
+  },
+  {
+    "VehicleId": 1889,
+    "RegistrationNo": "ZM45859",
+    "Version": "1.6 HDi 16V SW",
+    "VinNumber": "VF3WE9HXC34334180",
+    "Name": "PEUGEOT 207 HDI 1,6HDI 16V STC.",
+    "ModelYear": "0   ",
+    "Mileage": 298000
+  },
+  {
+    "VehicleId": 1890,
+    "RegistrationNo": "BE53401",
+    "Version": "1.4 87 HK",
+    "VinNumber": "W0L0MAP08D6083680",
+    "Name": "OPEL Adam 1,4 87HK 3 dørs",
+    "ModelYear": "2013",
+    "Mileage": 94000
+  },
+  {
+    "VehicleId": 1900,
+    "RegistrationNo": "AU70592",
+    "Version": "2.0 TDI AVANT AUT.",
+    "VinNumber": "WAUZZZ8K5DA130389",
+    "Name": "AUDI, A4",
+    "ModelYear": "0   ",
+    "Mileage": 228000
+  },
+  {
+    "VehicleId": 1901,
+    "RegistrationNo": "DG22024",
+    "Version": "C 180 KOMPRESSOR BlueEFFICIENCY",
+    "VinNumber": "WDD2042451F428710",
+    "Name": "MERCEDES-BENZ, C-KLASSE",
+    "ModelYear": "0   ",
+    "Mileage": 143000
+  },
+  {
+    "VehicleId": 1902,
+    "RegistrationNo": "CN46064",
+    "Version": "3.0 TDI QUATTRO",
+    "VinNumber": "WAUZZZ4M4GD009251",
+    "Name": "AUDI, Q7",
+    "ModelYear": "0   ",
+    "Mileage": 80800
+  }
+]

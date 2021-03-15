@@ -1,0 +1,14 @@
+{
+  "name": "gemensam",
+  "version": "1.0.0",
+  "description": "Demo av fetch",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Gustavsson",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.3"
+  }
+}
