@@ -1,0 +1,29 @@
+[
+  {
+    "VehicleId": 1848,
+    "RegistrationNo": "AR27966",
+    "Version": "2.0 TDI 140 COMBI",
+    "VinNumber": "TMBJE73T0F9025084",
+    "Name": "SKODA, SUPERB",
+    "ModelYear": "2015",
+    "Mileage": 162000
+  },
+  {
+    "VehicleId": 1849,
+    "RegistrationNo": "CM74039",
+    "Version": "1.6 CRDi 5-DØRS PREMIUM",
+    "VinNumber": "TMAH3517AJJ013572",
+    "Name": "HYUNDAI, I30",
+    "ModelYear": "2017",
+    "Mileage": 112500
+  },
+  {
+    "VehicleId": 1850,
+    "RegistrationNo": "BS60442",
+    "Version": "1.0 MPI 60",
+    "VinNumber": "WVWZZZAAZJD120180",
+    "Name": "VOLKSWAGEN, UP!",
+    "ModelYear": "2018",
+    "Mileage": 16611
+  }
+]

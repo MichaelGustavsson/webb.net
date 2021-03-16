@@ -1,5 +1,7 @@
 'use strict';
 
+const baseUrl = 'https://westcoast-cars-api.azurewebsites.net/api/vehicle/';
+
 const vehicleTable = document.querySelector('#vehicle-list');
 const tableView = document.querySelector('#tableView');
 const addVehicleView = document.querySelector('#addVehicle-container');
@@ -82,7 +84,7 @@ function createRow(car){
     `
         <tr><td
           td>${car.id}</td>
-          <td>${car.registrationNo}</td>
+          <td>${car.registrationNumber}</td>
           <td>${car.make}</td>
           <td>${car.model}</td>
           <td>${car.modelYear}</td>
@@ -93,6 +95,15 @@ function createRow(car){
   );
 }
 
-
+const loadVehicles = () => {
+  const url = `${baseUrl}list`;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      createTable(data);
+    });
+}
 
 createTable(vehicles);
+loadVehicles();
+
