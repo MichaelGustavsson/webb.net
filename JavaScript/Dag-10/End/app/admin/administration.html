@@ -10,9 +10,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Administerar bilar</title>
+    <title>Administrera bilar</title>
     <link rel="stylesheet" href="/content/css/styles.css" />
     <link rel="stylesheet" href="/content/css/admin.css" />
+    <link rel="stylesheet" href="/content/css/modal.css" />
   </head>
   <body>
     <header>
@@ -52,9 +53,10 @@
                   <th>RegNo</th>
                   <th>Make</th>
                   <th>Model</th>
-                  <th>Mode year</th>
+                  <th>Model year</th>
                   <th>Mileage</th>
                   <th>Value</th>
+                  <th style="text-align: left;"></th>
                 </tr>
               </thead>
               <tbody id="vehicle-list"></tbody>
@@ -64,20 +66,28 @@
       </section>
 
       <!-- Add Vehicle form -->
-      <section id="addVehicle-container" class="hidden">
-        <form>
-          <input type="text" id="vehicleIdInput" class="form-control" placeholder="Add dummy id...">
-          <input id="regNoInput" type="text" class="form-control" placeholder="Registrationno">
-          <input id="makeInput" type="text" class="form-control" placeholder="Make">
-          <input id="modelInput" type="text" class="form-control" placeholder="Model">
-          <input id="modelYearInput" type="text" class="form-control" placeholder="Model year">
-          <input id="mileageInput" type="text" class="form-control" placeholder="Mileage">
-          <input id="valueInput" type="text" class="form-control" placeholder="Value">
-          <button class="btn" id="save">Save</button>
-        </form>
-      </section>
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <section id="addVehicle-container">
+          <form>
+            <input id="regNoInput" type="text" class="form-control" placeholder="Registrationno">
+            <input id="makeInput" type="text" class="form-control" placeholder="Make">
+            <input id="modelInput" type="text" class="form-control" placeholder="Model">
+            <input id="modelYearInput" type="text" class="form-control" placeholder="Model year">
+            <input id="mileageInput" type="text" class="form-control" placeholder="Mileage in km">
+            <input id="valueInput" type="text" class="form-control" placeholder="Value">
+            <div class="buttons">
+              <button class="btn" id="save">Save</button>
+              <button class="btn btn-secondary" id="cancel">Cancel</button>
+            </div>
+          </form>
+        </section>
+      </div>
     </main>
-
+    <div id="spinner" class="hidden">
+      <img src="/content/img/loading.gif" alt="Wait...">
+    </div>
+    <div class="overlay hidden"></div>
     <script src="/scripts/car-list.js"></script>
     <script src="/scripts/admin.js"></script>
   </body>

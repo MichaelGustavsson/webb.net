@@ -1,4 +1,7 @@
 {
+  "grades": [
+    {"title": "Demo test"}
+  ],
   "courses": [
     {
       "id": 1,

@@ -20,6 +20,10 @@ thead {
   color: #fff;
 }
 
+input[type=text]{
+  width: 400px;
+}
+
 #admin-nav {
   background: #fff;
   position: sticky;
@@ -51,6 +55,24 @@ thead {
   background-color: var(--secondary-color);
 }
 
+.buttons {
+  display: flex;
+  gap:10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  width: 500px !important;
+}
+
+.delete {
+  color:#9b0404;
+  cursor: pointer;
+}
+
 #addNewVehicle {
   display: flex;
   justify-content: flex-end;
@@ -61,15 +83,17 @@ thead {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  margin: 60px 0 40px 0;
 }
 
 #save {
   width: 100px;
 }
-input[type=text]{
-  width: 400px;
-}
 
-.hidden {
-  display: none;
+#spinner {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:1;
 }

@@ -80,8 +80,8 @@ function createRow(car){
   vehicleTable.insertAdjacentHTML(
     'beforeend',
     `
-        <tr><td
-          td>${car.id}</td>
+        <tr>
+          <td>${car.id}</td>
           <td>${car.registrationNo}</td>
           <td>${car.make}</td>
           <td>${car.model}</td>
