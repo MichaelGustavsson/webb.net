@@ -15,9 +15,6 @@ for(let [key, value] of urlParams){
   if(key === 'vehicleId') vehicleId = value;
 }
 
-// const vehicle = vehicles.filter(findVehicle)[0];
-
-//const vehicle = vehicles.filter((car) => car.id == vehicleId)[0];
 const vehicle = vehicles.find((car) => car.id == vehicleId);
 
 heading.innerText = `${vehicle.make} ${vehicle.model}`;

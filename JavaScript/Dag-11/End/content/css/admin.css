@@ -42,13 +42,35 @@ thead {
 .table-container {
   overflow-x: scroll;
 }
-.pagination-header {
+.table-header {
   display: flex;
   gap: 10px;
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
   background-color: var(--secondary-color);
+}
+
+.pagination-header {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px 15px;
+  color:#fff;
+}
+
+.pagination-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px 15px;
+  gap: 10px;
+  color: #fff;
+}
+
+.pagination-footer span {
+  cursor: pointer;
 }
 
 .hidden {
@@ -75,8 +97,12 @@ thead {
 #save {
   width: 100px;
 }
-input[type=text]{
+input[type=text], textarea{
   width: 400px;
+}
+
+textarea {
+  height: 100px;
 }
 
 .buttons{
@@ -91,6 +117,12 @@ input[type=text]{
 .delete {
   color: #9b0404;
   cursor: pointer;
+}
+
+.edit {
+  color: rgba(0, 0, 255, 0.685);
+  cursor: pointer;
+  padding-left: 5px;
 }
 
 #spinner {

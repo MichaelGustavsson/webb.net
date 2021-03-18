@@ -20,29 +20,15 @@ const modalDialog = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const closeModal = document.querySelector('.close-modal');
 
-async function AddVehicle() {
-  const vehicle = {
-    registrationNumber: regNoInput.value,
-    make: makeInput.value,
-    model: modelInput.value,
-    modelYear: modelYearInput.value,
-    mileage: mileageInput.value,
-    value: valueInput.value,
-  };
+//Pagination info...
+const numberOfVehicles = document.querySelector('#numberOfVehicles');
+const pageInfo = document.querySelector('#pageInfo');
+const prevPage = document.querySelector('#prevPage').addEventListener('click', previousPageClicked);
+const nextPage = document.querySelector('#nextPage').addEventListener('click', nextPageClicked);
+const firstPage = document.querySelector('#firstPage').addEventListener('click', firstPageClicked);
+const lastPage = document.querySelector('#lastPage').addEventListener('click', lastPageClicked);
 
-  const response = await fetch(`${baseUrl}`, {
-    method: 'POST',
-    mode: 'cors',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(vehicle)
-  });
-
-  if(!response.ok) throw new Error(response.statusText);
-
-  return response.json();
-};
+let pagination = {};
 
 const searchVehicle = function () {
   if(searchInput !== null){
@@ -101,14 +87,24 @@ function createTable(vehiclesList){
     createRow(car);
   }
 
-  const tableRows = document.querySelectorAll('.table-container .delete');
+  let tableRows = document.querySelectorAll('.table-container .delete');
 
   tableRows.forEach(item => {
-    const vehicleId = item.parentNode.parentNode.firstElementChild.firstChild.nodeValue;
+    const vehicleId = item.parentNode.parentNode.children[1].firstChild.nodeValue;
     item.addEventListener('click', () => {
       deleteVehicleClicked(vehicleId);
     });
   });
+
+  tableRows = document.querySelectorAll('.table-container .edit');
+
+  tableRows.forEach(item => {
+    const vehicleId = item.parentNode.parentNode.children[1].firstChild.nodeValue;
+    item.addEventListener('click', () => {
+      location.href = `edit.html?vehicleId=${vehicleId}`;
+    });
+  });
+
   spinner.classList.add('hidden');
 }
 
@@ -117,6 +113,7 @@ function createRow(car){
     'beforeend',
     `
       <tr>
+        <td><i class="fal fa-pencil-alt edit"></i></td>
         <td>${car.id}</td>
         <td>${car.registrationNumber}</td>
         <td>${car.make}</td>
@@ -130,11 +127,14 @@ function createRow(car){
   );
 }
 
+function updatePagination(){
+  numberOfVehicles.innerText = `Number of vehicles ${pagination.totalItems}`;
+  pageInfo.innerText = `Page ${pagination.currentPage} of ${pagination.totalPages}`;
+}
+
 function deleteVehicleClicked(vehicleId) {
-  console.log(`Delete vehicle ${vehicleId}`);
   removeVehicle(vehicleId)
     .then(response => {
-      console.log(response);
       loadVehicles()
       .then(data => createTable(data));
     })
@@ -156,6 +156,54 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
+function firstPageClicked(){
+  loadVehicles(1)
+    .then(data => createTable(data))
+    .catch(err => console.log(err));
+}
+
+function lastPageClicked(){
+  loadVehicles(pagination.totalPages)
+    .then(data => createTable(data))
+    .catch(err => console.log(err));
+}
+
+function previousPageClicked(){
+  loadVehicles(pagination.currentPage > 1 ? pagination.currentPage - 1: 1)
+    .then(data => createTable(data))
+    .catch(err => console.log(err));
+}
+
+function nextPageClicked(){
+  loadVehicles(pagination.currentPage < pagination.totalPages ? pagination.currentPage + 1 : pagination.totalPages)
+    .then(data => createTable(data))
+    .catch(err => console.log(err));
+}
+
+async function AddVehicle() {
+  const vehicle = {
+    registrationNumber: regNoInput.value,
+    make: makeInput.value,
+    model: modelInput.value,
+    modelYear: modelYearInput.value,
+    mileage: mileageInput.value,
+    value: valueInput.value,
+  };
+
+  const response = await fetch(`${baseUrl}`, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(vehicle)
+  });
+
+  if(!response.ok) throw new Error(response.statusText);
+
+  return response.json();
+};
+
 async function removeVehicle(id){
   const response = await fetch(`${baseUrl}${id}`, {
     method: 'DELETE',
@@ -176,15 +224,17 @@ async function findVehicle(regNo){
   return response.json();
 }
 
-async function loadVehicles(){
+async function loadVehicles(page = 1){
   spinner.classList.remove('hidden');
-  const url = `${baseUrl}list`;
+  const url = `${baseUrl}list?page=${page}`;
   const response = await fetch(url)
 
   if(!response.ok){
     throw new Error(response.statusText);
   }
-
+  
+  pagination = JSON.parse(response.headers.get('pagination'));
+  updatePagination();
   return response.json();
 };
 
