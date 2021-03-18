@@ -10,10 +10,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Administrera bilar</title>
+    <title>Administerar bilar</title>
     <link rel="stylesheet" href="/content/css/styles.css" />
     <link rel="stylesheet" href="/content/css/admin.css" />
-    <link rel="stylesheet" href="/content/css/modal.css" />
+    <link rel="stylesheet" href="/content/css/modal.css">
   </head>
   <body>
     <header>
@@ -53,10 +53,10 @@
                   <th>RegNo</th>
                   <th>Make</th>
                   <th>Model</th>
-                  <th>Model year</th>
+                  <th>Mode year</th>
                   <th>Mileage</th>
                   <th>Value</th>
-                  <th style="text-align: left;"></th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody id="vehicle-list"></tbody>
@@ -67,14 +67,14 @@
 
       <!-- Add Vehicle form -->
       <div class="modal hidden">
-        <button class="close-modal">&times;</button>
-        <section id="addVehicle-container">
-          <form>
+        <button class="close-modal">&times</button>
+        <section id="addVehicle-container" class="hidden">
+          <form>            
             <input id="regNoInput" type="text" class="form-control" placeholder="Registrationno">
             <input id="makeInput" type="text" class="form-control" placeholder="Make">
             <input id="modelInput" type="text" class="form-control" placeholder="Model">
             <input id="modelYearInput" type="text" class="form-control" placeholder="Model year">
-            <input id="mileageInput" type="text" class="form-control" placeholder="Mileage in km">
+            <input id="mileageInput" type="text" class="form-control" placeholder="Mileage">
             <input id="valueInput" type="text" class="form-control" placeholder="Value">
             <div class="buttons">
               <button class="btn" id="save">Save</button>

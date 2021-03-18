@@ -24,7 +24,7 @@
   cursor: pointer;
   border: none;
   background: none;
-  outline: none;
+  outline: none !important;
 }
 
 .overlay {

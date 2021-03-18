@@ -8,7 +8,6 @@ const addVehicleView = document.querySelector('#addVehicle-container');
 const searchInput = document.querySelector('#searchInput');
 const searchButton = document.querySelector('#searchButton');
 const saveButton = document.querySelector('#save');
-const cancelButton = document.querySelector('#cancel');
 const regNoInput = document.querySelector('#regNoInput');
 const makeInput = document.querySelector('#makeInput');
 const modelInput = document.querySelector('#modelInput');
@@ -21,7 +20,7 @@ const modalDialog = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const closeModal = document.querySelector('.close-modal');
 
-async function AddVehicle(){
+async function AddVehicle() {
   const vehicle = {
     registrationNumber: regNoInput.value,
     make: makeInput.value,
@@ -39,18 +38,22 @@ async function AddVehicle(){
     },
     body: JSON.stringify(vehicle)
   });
+
+  if(!response.ok) throw new Error(response.statusText);
+
   return response.json();
 };
 
 const searchVehicle = function () {
-  
-  if (searchInput !== null) {
-    if (searchInput.value.length === 0) {
-      vehicleTable.innerHTML = '';
-      loadVehicles();
-    } else {
-      vehicleTable.innerHTML = '';
-      findVehicle(searchInput.value.toLowerCase());
+  if(searchInput !== null){
+    if(searchInput.value.length === 0){
+      loadVehicles()
+        .then(data => createTable(data))
+        .catch(err => console.log(err));
+    }else {
+      findVehicle(searchInput.value)
+        .then(data => createTable(data))
+        .catch(err => console.log(err));
     }
   }
 };
@@ -64,18 +67,24 @@ searchInput.addEventListener('keydown', (e) => {
 
 saveButton.addEventListener('click', (e) => {
   e.preventDefault();
-  AddVehicle().then(data => {
-    addVehicleView.classList.add('hidden');
-    tableView.classList.remove('hidden');
-    modalDialog.classList.add('hidden');
-    overlay.classList.add('hidden');
-    regNoInput.value = '';
-    makeInput.value = '';
-    modelInput.value = '';
-    modelYearInput.value = '';
-    mileageInput.value = '';
-    valueInput.value = '';
-  });
+  AddVehicle()
+    .then(data => {
+
+      //TODO: Flytta till en egen funktion...
+      addVehicleView.classList.add('hidden');
+      tableView.classList.remove('hidden');
+      modalDialog.classList.add('hidden');
+      overlay.classList.add('hidden');
+      regNoInput.value = '';
+      makeInput.value = '';
+      modelInput.value = '';
+      modelYearInput.value = '';
+      mileageInput.value = '';
+      valueInput.value = '';
+      loadVehicles()
+      .then(data => createTable(data));
+    })
+    .catch(err => console.log(err));
 });
 
 addNewButton.addEventListener('click', (e) => {
@@ -84,7 +93,7 @@ addNewButton.addEventListener('click', (e) => {
   addVehicleView.classList.remove('hidden');
   overlay.classList.remove('hidden');
   modalDialog.classList.remove('hidden');
-})
+});
 
 function createTable(vehiclesList){
   vehicleTable.innerHTML = '';
@@ -93,71 +102,43 @@ function createTable(vehiclesList){
   }
 
   const tableRows = document.querySelectorAll('.table-container .delete');
+
   tableRows.forEach(item => {
     const vehicleId = item.parentNode.parentNode.firstElementChild.firstChild.nodeValue;
     item.addEventListener('click', () => {
       deleteVehicleClicked(vehicleId);
     });
   });
+  spinner.classList.add('hidden');
 }
 
 function createRow(car){
   vehicleTable.insertAdjacentHTML(
     'beforeend',
     `
-        <tr>
-          <td>${car.id}</td>
-          <td>${car.registrationNumber}</td>
-          <td>${car.make}</td>
-          <td>${car.model}</td>
-          <td>${car.modelYear}</td>
-          <td>${car.mileage}</td>
-          <td>${car.value == undefined ? 0 : car.value}</td>
-          <td><i class="far fa-trash-alt delete"></i></td>
-        </tr>
-      `
+      <tr>
+        <td>${car.id}</td>
+        <td>${car.registrationNumber}</td>
+        <td>${car.make}</td>
+        <td>${car.model}</td>
+        <td>${car.modelYear}</td>
+        <td>${car.mileage}</td>
+        <td>${car.value == undefined ? 0 : car.value}</td>
+        <td><i class="far fa-trash-alt delete"></i></td>
+      </tr>
+    `
   );
 }
 
 function deleteVehicleClicked(vehicleId) {
-  console.log('delete vehicle ' + vehicleId);
+  console.log(`Delete vehicle ${vehicleId}`);
   removeVehicle(vehicleId)
     .then(response => {
-      console.log(response)
-      loadVehicles();
+      console.log(response);
+      loadVehicles()
+      .then(data => createTable(data));
     })
-    .catch(err => console.log(err))
-}
-
-async function removeVehicle(id){
-  const response = await fetch(`${baseUrl}${id}`, {
-    method: 'DELETE',
-    mode: 'cors'
-  });
-
-  return response.status;
-}
-
-const loadVehicles = () => {
-  spinner.classList.remove('hidden');
-  const url = `${baseUrl}list`;
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      createTable(data);
-      spinner.classList.add('hidden');
-    });
-}
-
-const findVehicle = (regNo) => {
-  spinner.classList.remove('hidden');
-  const url = `${baseUrl}find?condition=regno&value=${regNo}`;
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => {
-      createTable(data);
-      spinner.classList.add('hidden');
-    });
+    .catch(err => console.log(err));
 }
 
 const quitModal = () => {
@@ -175,6 +156,38 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-//createTable(vehicles);
-loadVehicles();
+async function removeVehicle(id){
+  const response = await fetch(`${baseUrl}${id}`, {
+    method: 'DELETE',
+    mode: 'cors'
+  });
 
+  if(!response.ok) throw new Error(response.statusText);
+  
+  return response.statusText;
+}
+
+async function findVehicle(regNo){
+  spinner.classList.remove('hidden');
+  const url = `${baseUrl}find?condition=regno&value=${regNo}`;
+  const response = await fetch(url);
+  if(!response.ok) throw new Error(response.statusText);
+
+  return response.json();
+}
+
+async function loadVehicles(){
+  spinner.classList.remove('hidden');
+  const url = `${baseUrl}list`;
+  const response = await fetch(url)
+
+  if(!response.ok){
+    throw new Error(response.statusText);
+  }
+
+  return response.json();
+};
+
+loadVehicles()
+.then(data => createTable(data))
+.catch(err => console.log(err));

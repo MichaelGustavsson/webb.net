@@ -32,9 +32,3 @@ function addUserButtonClicked() {
   spinner.classList.remove('hidden');
   addUser({firstName: 'Anna', lastName: 'Eriksson'}, getUsers);
 }
-
-users = getUsersSync()
-//... Vänta tills alla användare är hämtade.
-//... Gör något med de hämtade användarna.
-
-nextStepToTake(); // Denna metod måste vänta tills getUsersSync är klar
