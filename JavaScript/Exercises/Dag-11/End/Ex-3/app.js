@@ -9,12 +9,16 @@ const spinner = document.querySelector('.spinner');
 
 const pageSizeInput = document.querySelector('#pageSize');
 const pageInput = document.querySelector('#page');
+const paginationInfo = document.querySelector('#paginationInfo');
+
+let pagination = {};
 
 function getDataClicked(){
   spinner.classList.remove('hidden');
   fetchData()
   .then(response => {
     generateHtml(response);
+    updatePagination();
     spinner.classList.add('hidden')
   })
   .catch(err => {
@@ -32,6 +36,16 @@ function generateHtml(data){
   displayView.innerHTML = html;
 }
 
+function updatePagination(){
+  let html = '';
+  html = `
+    <span>Total items: ${pagination.totalItems}</span>
+    <span>Total pages: ${pagination.totalPages}</span>
+  `;
+
+  paginationInfo.innerHTML = html;
+}
+
 async function fetchData(){  
   const pageSize = pageSizeInput.value === '' ? 10 : pageSizeInput.value;
   const page = pageInput.value === '' ? 1 : pageInput.value;
@@ -40,6 +54,8 @@ async function fetchData(){
   const response = await fetch(url);
 
   if(!response.ok) throw new Error(response.statusText);
+
+  pagination = JSON.parse(response.headers.get('pagination'));
 
   return response.json();
 }

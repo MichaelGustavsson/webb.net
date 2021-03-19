@@ -61,6 +61,17 @@ input[type=text] {
   gap: 0.6rem;
 }
 
+.paginationHeader {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.paginationHeader div {
+  width: 20rem;
+  text-align: center;
+}
+
 .spinner {
   position: absolute;
   top: 50%;
@@ -74,13 +85,14 @@ input[type=text] {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
-  margin-top: 50px;
+  margin-top: 0.3rem;
 }
 
 #display div {
   padding: 10px 15px;
   border: solid 1px #aaa8a8;
   border-radius: 5px;
+  width: 20rem;
 }
 
 #display span{
