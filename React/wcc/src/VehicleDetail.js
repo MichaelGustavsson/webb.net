@@ -6,7 +6,6 @@ function demoFunc(make) {
 }
 // 2. Skapa komponenten.
 const VehicleDetail = (props) => {
-  console.log(props);
   return (
     <div className='card-container'>
       <div className='card'>

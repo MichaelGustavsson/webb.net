@@ -37,6 +37,14 @@ const App = () => {
         value='245000'
         image='./img/car11.jpg'
       />
+      <VehicleDetail
+        make='Mercedes'
+        model='200'
+        modelYear='1994'
+        mileage='850000'
+        value='25000'
+        image='./img/car11.jpg'
+      />
     </div>
   );
 };
