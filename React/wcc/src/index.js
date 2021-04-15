@@ -2,6 +2,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// Importera externa komponenter
+import VehicleDetail from './VehicleDetail';
+
 // Importera våra css filer.
 import './App.css';
 
@@ -10,32 +13,30 @@ import './App.css';
 const App = () => {
   return (
     <div className='container'>
-      <div className='card-container'>
-        <div className='card'>
-          <img src='./img/car1.jpg' alt='bil 1' className='card-img-top' />
-          <div className='card-body'>
-            <h2 className='card-title'>Volvo</h2>
-            <div className='card-body-content'>
-              <div>
-                <label>Model</label>
-                <span>V90</span>
-              </div>
-              <div>
-                <label>Model Year</label>
-                <span>2017</span>
-              </div>
-              <div>
-                <label>Mileage</label>
-                <span>25000</span>
-              </div>
-              <div>
-                <label>Value</label>
-                <span>235000</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <VehicleDetail
+        make='Fiat'
+        model='500'
+        modelYear='2019'
+        mileage='25000'
+        value='135000'
+        image='./img/car1.jpg'
+      />
+      <VehicleDetail
+        make='Kia'
+        model='Ceed'
+        modelYear='2017'
+        mileage='35000'
+        value='145000'
+        image='./img/car4.jpg'
+      />
+      <VehicleDetail
+        make='Volvo'
+        model='XC60'
+        modelYear='2019'
+        mileage='85000'
+        value='245000'
+        image='./img/car11.jpg'
+      />
     </div>
   );
 };
