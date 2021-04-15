@@ -1,0 +1,29 @@
+:root{
+  --primary-color: #152d6d;
+  --secondary-color: #ee9504;
+  --light-color: #f4f4f4;
+  --dark-color: #222;
+  --primary-text-color: #333;
+  --max-width: 1920px;
+}
+
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.is-selected {
+  background-color: darkblue;
+  color: #fff;
+}

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  align-items: flex-end;
+  gap: 1.2rem;
+  padding: 2rem 1.5rem;
+}
+
+.card-container {
+  max-width: 15rem;
+  margin: 0 0 1.3rem 0;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: solid 1px rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.card-body-content {
+  background-color: #f4f4f4;
+  margin: -1.25rem;
+  padding: 1rem;
+}
+
+.card-body-content > div > label {
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  flex-shrink: 0;
+  margin: 3px;
+  border: solid 1px rgba(0, 0, 0, 0.242);
+}
+
+.btn {
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  outline: none !important;
+  border: none;
+  border-radius: 5px;
+}

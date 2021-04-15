@@ -1,0 +1,279 @@
+{
+  "vehicles": [
+    {
+      "id": 1,
+      "registrationNumber": "XN38693",
+      "make": "NISSAN",
+      "model": "QASHQAI",
+      "modelName": "QASHQAIQASHQAI 1.6-131 D",
+      "name": "Nissan, Qashqai",
+      "mileage": 135000,
+      "modelYear": "2012",
+      "value": 39000,
+      "imageUrl": "/assets/img/car1.jpg",
+      "description": "Demo av uppdatering, ny uppdatering"
+    },
+    {
+      "id": 2,
+      "registrationNumber": "KH93545",
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "modelName": "GOLFGOLF 1.4-122",
+      "name": "Volkswagen, Golf",
+      "mileage": 114000,
+      "modelYear": "2014",
+      "value": 60000,
+      "imageUrl": "/assets/img/car2.jpg",
+      "description": null
+    },
+    {
+      "id": 3,
+      "registrationNumber": "SU83890",
+      "make": "VOLVO",
+      "model": "V50",
+      "modelName": "V50V50 1.6-109 D",
+      "name": "Volvo, V50",
+      "mileage": 127000,
+      "modelYear": "2010",
+      "value": 43000,
+      "imageUrl": "/assets/img/car3.jpg",
+      "description": null
+    },
+    {
+      "id": 4,
+      "registrationNumber": "DL64562",
+      "make": "VOLVO",
+      "model": "XC70",
+      "modelName": "XC70XC70 2.4-185 D AWD",
+      "name": "Volvo, XC70",
+      "mileage": 248000,
+      "modelYear": "2007",
+      "value": 35000,
+      "imageUrl": "/assets/img/car4.jpg",
+      "description": ""
+    },
+    {
+      "id": 5,
+      "registrationNumber": "BT71019",
+      "make": "VOLVO",
+      "model": "S90",
+      "modelName": "S90S90 2.0-320 AWD",
+      "name": "Volvo, S90",
+      "mileage": 38000,
+      "modelYear": "2018",
+      "value": 445000,
+      "imageUrl": "/assets/img/car5.jpg",
+      "description": null
+    },
+    {
+      "id": 6,
+      "registrationNumber": "BE11782",
+      "make": "VOLVO",
+      "model": "V60",
+      "modelName": "V60V60 TWIN ENGINE 2.4-220 D AWD",
+      "name": "Volvo, V60",
+      "mileage": 94000,
+      "modelYear": "2017",
+      "value": 235000,
+      "imageUrl": "/assets/img/car6.jpg",
+      "description": null
+    },
+    {
+      "id": 7,
+      "registrationNumber": "EV87722",
+      "make": "NISSAN",
+      "model": "Leaf",
+      "modelName": "LeafLEAF 62KWH 90KW",
+      "name": "Nissan, Leaf",
+      "mileage": 35000,
+      "modelYear": "2019",
+      "value": 250000,
+      "imageUrl": "/assets/img/car11.jpg",
+      "description": null
+    },
+    {
+      "id": 8,
+      "registrationNumber": "SU93977",
+      "make": "BMW",
+      "model": "3-Serie",
+      "modelName": "3-Serie320 I 2.0-170",
+      "name": "BMW, 3-Serie",
+      "mileage": 60000,
+      "modelYear": "2010",
+      "value": 95000,
+      "imageUrl": "/assets/img/car6.jpg",
+      "description": null
+    },
+    {
+      "id": 9,
+      "registrationNumber": "VH58099",
+      "make": "VOLVO",
+      "model": "XC60",
+      "modelName": "XC60XC60 2.4-181 D AWD",
+      "name": "Volvo, XC60",
+      "mileage": 43856,
+      "modelYear": "2014",
+      "value": 305000,
+      "imageUrl": "/assets/img/car5.jpg",
+      "description": null
+    },
+    {
+      "id": 10,
+      "registrationNumber": "DP77730",
+      "make": "AUDI",
+      "model": "A4 allroad",
+      "modelName": "A4 allroadA4 ALLROAD 2.0-163 D QUATTRO",
+      "name": "Audi, A4 allroad",
+      "mileage": 140000,
+      "modelYear": "2016",
+      "value": 220000,
+      "imageUrl": "/assets/img/car3.jpg",
+      "description": null
+    },
+    {
+      "id": 11,
+      "registrationNumber": "UF67138",
+      "make": "VOLVO",
+      "model": "S60",
+      "modelName": "S60S60 1.6-114 D",
+      "name": "Volvo, S60",
+      "mileage": 91500,
+      "modelYear": "2015",
+      "value": 120000,
+      "imageUrl": "/assets/img/car1.jpg",
+      "description": null
+    },
+    {
+      "id": 13,
+      "registrationNumber": "HT17041",
+      "make": "BMW",
+      "model": "X3",
+      "modelName": "X3X3 XDRIVE20D 2.0-163 D",
+      "name": "BMW, X3",
+      "mileage": 55000,
+      "modelYear": "2015",
+      "value": 280000,
+      "imageUrl": "/assets/img/car11.jpg",
+      "description": null
+    },
+    {
+      "id": 14,
+      "registrationNumber": "SV76894",
+      "make": "VOLVO ",
+      "model": "XC60",
+      "modelName": "XC60XC60 2.0-150 D",
+      "name": "Volvo, XC60",
+      "mileage": 85000,
+      "modelYear": "2017",
+      "value": 270000,
+      "imageUrl": "/assets/img/car2.jpg",
+      "description": ""
+    },
+    {
+      "id": 15,
+      "registrationNumber": "SV22622",
+      "make": "VOLVO",
+      "model": "V60",
+      "modelName": "V60V60 1.6-114 D",
+      "name": "Volvo, V60",
+      "mileage": 146000,
+      "modelYear": "2012",
+      "value": 68000,
+      "imageUrl": "/assets/img/car13.jpg",
+      "description": null
+    },
+    {
+      "id": 16,
+      "registrationNumber": "EV54043",
+      "make": "Tesla",
+      "model": "Model 3",
+      "modelName": "Model 3MODEL 3 65KW",
+      "name": "Tesla, Model 3",
+      "mileage": 22000,
+      "modelYear": "2019",
+      "value": 375000,
+      "imageUrl": "/assets/img/car15.jpg",
+      "description": null
+    },
+    {
+      "id": 17,
+      "registrationNumber": "LJ58058",
+      "make": "BMW",
+      "model": "X4",
+      "modelName": "X4X4 XDRIVE20D 2.0-163 D",
+      "name": "BMW, X4",
+      "mileage": 105000,
+      "modelYear": "2015",
+      "value": 290000,
+      "imageUrl": "/assets/img/car1.jpg",
+      "description": null
+    },
+    {
+      "id": 18,
+      "registrationNumber": "EB24564",
+      "make": "NISSAN",
+      "model": "Leaf",
+      "modelName": "LeafLEAF 40KWH 90KW",
+      "name": "Nissan, Leaf",
+      "mileage": 33000,
+      "modelYear": "2018",
+      "value": 175000,
+      "imageUrl": "/assets/img/car2.jpg",
+      "description": null
+    },
+    {
+      "id": 19,
+      "registrationNumber": "VH73973",
+      "make": "KIA",
+      "model": "Rio",
+      "modelName": "RioRIO 1.2-83",
+      "name": "Kia, Rio",
+      "mileage": 93000,
+      "modelYear": "2016",
+      "value": 65000,
+      "imageUrl": "/assets/img/car3.jpg",
+      "description": null
+    },
+    {
+      "id": 20,
+      "registrationNumber": "DN92365",
+      "make": "HYUNDAI",
+      "model": "i40",
+      "modelName": "i40I40 1.7-136 D",
+      "name": "Hyundai, i40",
+      "mileage": 142000,
+      "modelYear": "2012",
+      "value": 50000,
+      "imageUrl": "/assets/img/car4.jpg",
+      "description": null
+    },
+    {
+      "id": 21,
+      "registrationNumber": "KJ19589",
+      "make": "VOLKSWAGEN",
+      "model": "GOLF",
+      "modelName": "GOLFGOLF 2.0-150 D",
+      "name": "Volkswagen, Golf",
+      "mileage": 189000,
+      "modelYear": "2016",
+      "value": 95000,
+      "imageUrl": "/assets/img/car5.jpg",
+      "description": null
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    }
+  ]
+}

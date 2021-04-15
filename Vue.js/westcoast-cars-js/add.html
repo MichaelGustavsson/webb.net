@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <title>Add new Vehicle</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <form>
+          <div class="input-control">
+            <label for="regNoField">RegNo</label><br />
+            <input type="text" id="regNoField" />
+          </div>
+          <div class="input-control">
+            <label for="makeField">Make</label><br />
+            <input type="text" id="makeField" />
+          </div>
+          <div class="input-control">
+            <label for="modelField">Model</label><br />
+            <input type="text" id="modelField" />
+          </div>
+          <div class="input-control">
+            <label for="modelYearField">Model year</label><br />
+            <input type="text" id="modelYearField" />
+          </div>
+          <div class="input-control">
+            <label for="mileageField">Mileage</label><br />
+            <input type="text" id="mileageField" />
+          </div>
+          <div class="input-control">
+            <label for="valueField">Price</label><br />
+            <input type="text" id="valueField" />
+          </div>
+          <button type="submit" class="btn btn-primary" id="save">Save</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/scripts/http-service.js"></script>
+    <script src="/scripts/add-vehicle.js"></script>
+  </body>
+</html>
