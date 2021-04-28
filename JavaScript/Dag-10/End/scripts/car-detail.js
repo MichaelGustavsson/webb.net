@@ -11,8 +11,8 @@ let vehicleId = 0;
 
 const urlParams = new URLSearchParams(location.search);
 
-for(let [key, value] of urlParams){
-  if(key === 'vehicleId') vehicleId = value;
+for (let [key, value] of urlParams) {
+  if (key === 'vehicleId') vehicleId = value;
 }
 
 // const vehicle = vehicles.filter(findVehicle)[0];
@@ -21,7 +21,7 @@ for(let [key, value] of urlParams){
 const vehicle = vehicles.find((car) => car.id == vehicleId);
 
 heading.innerText = `${vehicle.make} ${vehicle.model}`;
-image.setAttribute('src', `./content/img/${vehicle.imageName}.jpg`);
+image.setAttribute('src', `/content/img/${vehicle.imageName}.jpg`);
 regNo.innerHTML += ` <span style="font-weight: bold;color: #ff0000;">${vehicle.registrationNo}</span>`;
 modelYear.innerText += ` ${vehicle.modelYear}`;
 mileage.innerText += ` ${vehicle.mileage}`;
