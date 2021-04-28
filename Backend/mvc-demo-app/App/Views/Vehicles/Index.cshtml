@@ -1,13 +1,11 @@
+@await Html.PartialAsync("_VehicleDetails")
 <h1>Hej ifrån Vehicles Index sida!</h1>
 
 <h4>@ViewBag.data</h4>
 
-@* Detta är min kommentar *@
-
-@* Där razor används för att hantera data som skall presenteras *@
-@{
-  int x = 10;
-  int y = 5;
-  int res = x + y;
-  @res
-}
+<input type="text">
+<button>Klicka här</button>
+<a href="#">Klicka här</a>
+<br>
+<br>
+@await Component.InvokeAsync("VehicleInfo")

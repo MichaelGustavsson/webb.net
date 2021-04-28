@@ -1,10 +1,14 @@
-using App.Models;
+using System;
 
 namespace App.ViewModels
 {
   public class VehicleViewModel
   {
-    public VehicleModel Vehicles { get; set; }
-    public ValuationModel Valuations { get; set; }
+    public string Name { get; set; }
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public string RegistrationNumber { get; set; }
+    public bool IsImported { get; set; }
+    public DateTime RegistrationDate { get; set; }
   }
 }

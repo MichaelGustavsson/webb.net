@@ -23,6 +23,10 @@ namespace App.Controllers
       return View();
     }
 
+    public IActionResult DisplayVehicles()
+    {
+      return RedirectToAction("list", "vehicles");
+    }
     public IActionResult Privacy()
     {
       return View();

@@ -13566,6 +13566,23 @@
         }
       },
       {
+        "HashCode": 1786511331,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__VehicleInfoViewComponentTagHelper",
+        "AssemblyName": "App",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:vehicle-info"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__VehicleInfoViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "VehicleInfo"
+        }
+      },
+      {
         "HashCode": -482054960,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -15624,6 +15641,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/Views/Vehicles/Register.cshtml",
+      "TargetPath": "Views\\Vehicles\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15644,6 +15666,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/Views/Shared/_VehicleDetails.cshtml",
+      "TargetPath": "Views\\Shared\\_VehicleDetails.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -15651,6 +15678,11 @@
     {
       "FilePath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/Views/Vehicles/List.cshtml",
       "TargetPath": "Views\\Vehicles\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/Views/Shared/Components/VehicleInfo/VehicleInfo.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\VehicleInfo\\VehicleInfo.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,5 +1,4 @@
 using App.Models;
-using App.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace App.Controllers
@@ -15,15 +14,8 @@ namespace App.Controllers
     {
       var message = "Detta är ett meddelande ifrån Mamma";
       ViewBag.data = message;
-      var vehicleList = new VehicleViewModel
-      {
-        Vehicles = null,
-        Valuations = null
-      };
 
-      var data = new VehicleModel { Make = "Kia" };
-
-      return View("Index", vehicleList);
+      return View("Index");
     }
 
     [HttpGet()]
@@ -31,6 +23,13 @@ namespace App.Controllers
     public IActionResult List()
     {
       return View("List");
+    }
+
+    [HttpGet()]
+    [Route("register")]
+    public IActionResult Register()
+    {
+      return View("Register");
     }
 
     [HttpGet()]

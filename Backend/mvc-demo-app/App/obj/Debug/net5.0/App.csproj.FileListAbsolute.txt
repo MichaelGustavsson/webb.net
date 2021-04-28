@@ -40,3 +40,6 @@
 /Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/obj/Debug/net5.0/Razor/Views/Vehicles/Index.cshtml.g.cs
 /Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/obj/Debug/net5.0/Razor/Views/Vehicles/List.cshtml.g.cs
 /Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/obj/Debug/net5.0/Razor/Views/Vehicles/Vehicle.cshtml.g.cs
+/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/obj/Debug/net5.0/Razor/Views/Vehicles/Register.cshtml.g.cs
+/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/obj/Debug/net5.0/Razor/Views/Shared/_VehicleDetails.cshtml.g.cs
+/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/obj/Debug/net5.0/Razor/Views/Shared/Components/VehicleInfo/VehicleInfo.cshtml.g.cs
