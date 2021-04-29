@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gCOBt4JoxtejkwX8GbAJuB5WREpIYkoKIYA7HJG2nkAQGHI7CglrSZXxYVJG1CjT7nNYj3cpKMT2rwGFAE+Qsg==",
+  "dgSpecHash": "i69X46KK4ykgbApG9WxWtKjbKef+N91tkbwBLbEQF30g3USf810YsWAXjs2ZiIU9V19WCXhlAniOL/b2jE3m8w==",
   "success": true,
-  "projectFilePath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/App.csproj",
+  "projectFilePath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/code/demos/Backend/mvc-demo-app/App/App.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

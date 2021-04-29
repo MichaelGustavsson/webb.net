@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/App.csproj": {}
+    "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/code/demos/Backend/mvc-demo-app/App/App.csproj": {}
   },
   "projects": {
-    "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/App.csproj": {
+    "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/code/demos/Backend/mvc-demo-app/App/App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/App.csproj",
+        "projectUniqueName": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/code/demos/Backend/mvc-demo-app/App/App.csproj",
         "projectName": "App",
-        "projectPath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/App.csproj",
+        "projectPath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/code/demos/Backend/mvc-demo-app/App/App.csproj",
         "packagesPath": "/Users/michaelgustavsson/.nuget/packages/",
-        "outputPath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/Backend/demos/mvc-demo-app/App/obj/",
+        "outputPath": "/Users/michaelgustavsson/Documents/Dev/Courses/ITHS/Webb-utveckling-C#/code/demos/Backend/mvc-demo-app/App/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

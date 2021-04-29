@@ -3,19 +3,9 @@
 }
 
 <div class="text-center">
-    @await Html.PartialAsync("_VehicleDetails")
-
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 
     <hr>
 
-    @Html.ActionLink("Gå till våra bilar","list","vehicles")
-    <br>
-    <a asp-action="DisplayVehicles">Ännu ett sätt att se våra bilar</a>
-
-    <hr>
-
-    @await Component.InvokeAsync("VehicleInfo")
-    <vc:vehicle-info></vc:vehicle-info>
 </div>
